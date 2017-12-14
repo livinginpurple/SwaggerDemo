@@ -11,11 +11,13 @@
 ## 開新專案
 
 若未使用 Application Insights，不勾選。
+
 ![開新專案](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-01.png)
 
 ## 選擇專案類型 (Web API)
 
 選擇 Web API，並使用 No Authentication (若未使用任何認證方式)
+
 ![選擇專案類型 (Web API)](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-02.png)
 
 ![選擇 No Authentication](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-03.png)
@@ -68,17 +70,19 @@ Install-Package Swashbuckle
 EnableSwagger，設定 XML 路徑
 ![Swagger Settings 1](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-13.png)
 
-路徑設定錯誤，顯示找不到檔案
-
-![Swagger Settings 2](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-14.png)
-
 ```cs
 c.IncludeXmlComments(GetXmlCommentsPath());
 ```
 
+### 路徑設定錯誤，顯示找不到檔案
+
+![Swagger Settings 2](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-14.png)
+
 ![Swagger Settings 3](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-16.png)
 
-### 路徑設定正確，顯示 Swagger 頁面
+正確路徑：
+
+![Swagger Settings 4](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-15.png)
 
 ```cs
         private static string GetXmlCommentsPath()
@@ -87,7 +91,7 @@ c.IncludeXmlComments(GetXmlCommentsPath());
         }
 ```
 
-![Swagger Settings 4](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-15.png)
+### 路徑設定正確，顯示 Swagger 頁面
 
 網址為：http://localhost:{Port}/swagger
 
@@ -95,7 +99,7 @@ c.IncludeXmlComments(GetXmlCommentsPath());
 
 EnableSwaggerUi，設定自訂範本 index.html
 
-[範本下載](
+[首頁範本下載](
 https://github.com/domaindrivendev/Swashbuckle/blob/master/Swashbuckle.Core/SwaggerUi/CustomAssets/index.html)
 
 ![Swagger Settings 6](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-18.png)
@@ -143,3 +147,10 @@ c.DocExpansion(DocExpansion.List);
 ![Swagger Settings 15](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-27.png)
 
 ![Swagger Settings 16](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-28.png)
+
+## Reference
+
++ [ASP.NET WEB API 文件產生器(2) - SWAGGER](http://blog.kkbruce.net/2015/04/aspnet-web-api-2-swagger.html)
++ [Web API文件產生器-Swagger](http://note.kimx.info/2017/05/web-api-swagger.html)
++ [Swashbuckle - Seamlessly adds a swagger to WebApi projects](http://larrynung.github.io/2016/10/04/Swashbuckle-Seamlessly-adds-a-swagger-to-WebApi-projects)
++ [API & SDK Design #4, API 上線前的準備 - Swagger + Azure API Apps](http://columns.chicken-house.net/2016/11/27/microservice6/)
