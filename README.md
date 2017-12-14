@@ -15,7 +15,7 @@
 
 ## 選擇專案類型 (Web API)
 
-選擇 Web API，並使用 No Authentication (若為使用者任何認證方式)
+選擇 Web API，並使用 No Authentication (若未使用任何認證方式)
 ![選擇專案類型 (Web API)](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-02.png)
 
 ![選擇 No Authentication](https://raw.githubusercontent.com/livinginpurple/SwaggerDemo/master/Images/Swagger-03.png)
